@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+body {
+    /* background-image: url('assets/images/NY.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background: #171a1b;
+    color: #fff;
+    font-family: sans-serif;
+    text-shadow: 5px 4px #000;
+}
+
+.particles-container canvas {
+    position: fixed;
+}

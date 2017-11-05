@@ -1,0 +1,87 @@
+.app-enclosure {
+    z-index: 1000;
+}
+
+.header-content {
+    margin-bottom: 100px;
+}
+
+.logo-wrapper {
+    text-align: center;
+}
+
+.logo-wrapper img {
+    width: 600px;
+    padding: 30px;
+}
+
+.standby-contant-wrapper {
+    text-align: center;
+}
+
+.active-mode {
+    text-align: center;
+}
+
+.choice-header {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.PA-page-wrapper {
+    text-align: center;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.PB-page-wrapper {
+    text-align: center;
+}
+
+.returning-message {
+    text-align: center;
+}
+
+.help-button-wrapper {
+    text-align: right;
+}
+
+.transit-content {
+    text-align: center;
+}
+
+.help-button-wrapper button {
+    background-color: red;
+    color: #fff;
+}
+
+.particles-div {
+    /* position: fixed; */
+    /* height: 100vh; */
+}
+
+.buttons-wrapper div {
+    z-index: 9999;
+    padding: 10px;
+}
+
+.buttons-wrapper div button {
+    border-radius: 35px;
+    background-color: #3a838f;
+    color: #fff;
+    /* text-shadow: 1px 1px #020202; */
+    font-family: sans-serif;
+    font-size: 21px;
+    padding: 10px 30px;
+}
+
+.call-help {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

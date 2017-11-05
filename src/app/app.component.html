@@ -1,0 +1,159 @@
+<particles class="particles-div" [style]="style" [width]="width" [height]="height" [params]="params">
+</particles>
+<!-- header -->
+<div class="app-enclosure">
+    <div class="t-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-content">
+                        <div class="logo-wrapper">
+                            <img src="./assets/images/logo.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- standby mode -->
+    <div class="t-standby t-point-c S1" *ngIf="isStandby">
+        <div class="standby-page-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="standby-contant-wrapper">
+                            <h1>The Bot is on StandBy...</h1>
+                            <h2>Zzzz...</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- active mode -->
+    <div class="t-active-mode S2" *ngIf="isActive">
+        <div class="active-mode">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Hey everyone, {{user.name}} is here!!!</h1>
+                        <h2>Welcome {{user.name}}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reached point A -->
+    <div class="t-point-a S3" *ngIf="isPointA">
+        <div class="PA-page-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="PA-contant-wrapper"> Data is : {{data?.type}} is moving to {{data?.message}}
+                            <h1>Welcome to Techolution</h1>
+                            <h2>Mr. BotMan</h2>
+                            <h3>We were expecting you.!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+
+                <div class="choice-header">
+                    <h3>Please select your choice.</h3>
+                </div>
+                <div class="row buttons-wrapper">
+                    <div class="col-xs-4"><button class="btn btn-default event event-0" (click)="sendMessage(0)">Escort to point B</button></div>
+                    <div class="col-xs-4"><button class="btn btn-default event event-1" (click)="sendMessage(1)">Escort to RoomX</button></div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- bot is in transit -->
+    <div class="S4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="transit-content">
+                        <h2>Please follow me Mr.X</h2>
+                        <h3>Plese maitain a safe distance of 2-3 feet.</h3>
+                        <p>PS: You don't get to change your option now because i'm moving and touching moving bots makes them angry.!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reached point B -->
+    <div class="t-point-b S5" *ngIf="isPointB">
+        <div class="PB-page-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="PB-contant-wrapper">
+                            <h1>Welcome to Techolution</h1>
+                            <h2>Mr. BotMan</h2>
+                            <h3>You have reached point B!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+
+                <div class="choice-header">
+                    <h3>Please select your choice.</h3>
+                </div>
+                <div class="row buttons-wrapper">
+                    <div class="col-xs-4"><button class="btn btn-default event event-0" (click)="sendMessage(0)">Escort to Point A</button></div>
+                    <div class="col-xs-4"><button class="btn btn-default event event-1" (click)="sendMessage(1)">Escort to Point B</button></div>
+                    <div class="col-xs-4"><button class="btn btn-default event event-2" (click)="sendMessage(2)">Go Back to StandBy</button></div>
+                    <div class="col-xs-4"><button class="btn btn-default event event-3" (click)="sendMessage(3)">Dummy</button></div>
+                </div>
+                <div class="container">
+                    <h4>Note the bot will return back to its default position in 120 secs.</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- bot returning to standby -->
+    <div class="bot-returning-back S6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="returning-message">
+                        <h4>The hardworking bot is returning back to its default standby position.</h4>
+                        <h5>Pssst. Please Mind your step.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- call help -->
+    <div class="call-help">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="help-button-wrapper">
+                        <button class="btn btn-default standby-btn" (click)="sendMessage(2)">Go Back to StandBy</button>
+                        <button class="btn btn-default help-btn">Stop and Call Help</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
